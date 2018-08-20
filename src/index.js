@@ -24,7 +24,7 @@ function showPic(picObj){
     likes.innerText = picObj.like_count
     const likeBttn = document.getElementById('like_button')
     const commentText = document.getElementById('comments')
-    commentText.innerText = picObj.content.comment
+    commentText.innerText = picObj.comments.content
     likeBttn.addEventListener('click', () => {
       const likeValue = {
           like_count: ++picObj.like_count
